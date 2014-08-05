@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="<{$xoops_langcode}>">
+  <head>
+    <{assign var=theme_name value=$xoTheme->folderName}>
+
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/get_var.html"}>
+    <meta charset="<{$xoops_charset}>">
+    <meta name="robots" content="<{$xoops_meta_robots}>" />
+    <meta name="keywords" content="<{$xoops_meta_keywords}>" />
+    <meta name="description" content="<{$xoops_meta_description}>" />
+    <meta name="rating" content="<{$xoops_meta_rating}>" />
+    <meta name="author" content="<{$xoops_meta_author}>" />
+    <meta name="copyright" content="<{$xoops_meta_copyright}>" />
+    <meta name="generator" content="XOOPS" />
+
+    <title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+
+
+    <!-- Rss -->
+    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+    <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+
+    <!-- Sheet Css -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl templatemo_style.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/xoops.css}>" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl modules/tadtools/bootstrap/css/bootstrap.css}>">
+
+
+
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/theme_css.html"}>
+    <script type='text/javascript'>
+      if(typeof jQuery == 'undefined') {
+      document.write("<script type='text/javascript' src='<{xoAppUrl modules/tadtools/jquery/jquery.js}>'><\/script>");
+      }
+    </script>
+
+    <!-- customized header contents -->
+    <{$xoops_module_header}>
+
+
+  </head>
+
+  <body>
+
+    <div id="templatemo_wrapper_outer">
+      <div id="templatemo_wrapper">
+        <div id="templatemo_header">
+
+          <div id="site_title">
+            <{if $logo_img}>
+              <a href="<{xoAppUrl}>"><img src="<{$logo_img}>" alt="<{$xoops_sitename}>" style="position: absolute;z-index:10;"></a>
+            <{else}>
+              <h1><a href="<{xoAppUrl}>"><{$xoops_sitename}><span><{$xoops_slogan}></span></a></h1>
+            <{/if}>
+          </div>
+
+          <div id="templatemo_menu">
+            <ul>
+              <{foreach from=$topmenu item=tm key=i}>
+                <li><a href="<{$tm.url}>" <{if $i==0}>class="current"<{/if}> <{if $tm.target}>target="<{$tm.target}>"<{/if}>><{$tm.name}></a></li>
+              <{/foreach}>
+            </ul>
+          </div>
+        </div>
+
+        <!--{includeq file="$theme_name/xotpl/slider.html"}-->
+        <div id="templatemo_slider">
+          <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/slider/amazingslider1.html"}>
+        </div>
+
+
+
+        <div id="templatemo_content">
+          <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/navbar.html"}>
+          <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/$theme_type.html"}>
+        </div>
+
+        <div class="cleaner"></div>
+      </div>
+    </div>
+
+    <div id="templatemo_footer_wrapper">
+      <div id="footer_top"></div>
+      <div id="templatemo_footer">
+        <{$xoops_footer}>
+      </div>
+
+      <div id="templatemo_copyright">
+        Copyright © 2048 <a href="#">Your Company Name</a> | Designed by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+      </div>
+    </div>
+
+    <script src="<{xoAppUrl modules/tadtools/bootstrap/js/bootstrap.min.js}>"></script>
+
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/my_js.html"}>
+
+    <{if $show_var==1}>
+      <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/show_var.html"}>
+    <{/if}>
+
+  </body>
+</html>

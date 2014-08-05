@@ -1,0 +1,137 @@
+#featured{
+	width: 580px;
+	padding-right:280px;
+	position:relative;
+	height:250px;
+	background:#fff;
+	margin: 0 auto;
+}
+#featured ul.ui_tabs_nav{
+	position:absolute;
+	top:0; left:580px;
+	list-style:none;
+	padding:0; margin:0;
+	width: 280px;
+}
+#featured ul.ui_tabs_nav li{
+	padding:1px 0; padding-left:13px;
+	font-size:12px;
+	color:#666;
+	width: 100%;
+	background: #fff;
+}
+#featured ul.ui_tabs_nav li div{
+	float:left; margin:2px 5px;
+	background:#fff;
+	padding:2px;
+	border:1px solid #eee;
+}
+#featured ul.ui_tabs_nav li span{
+	font-size:12px;
+	line-height:18px;
+}
+#featured li.ui_tabs_nav-item a{
+	display:block;
+	height:60px;
+	color:#333;  background:#fff;
+	line-height:20px;
+}
+#featured li.ui_tabs_nav-item a:hover{
+	background:#f2f2f2;
+}
+#featured ul.ui_tabs_nav li.ui-tabs-active{
+	background:url('images/content_slider/selected-item.gif') top left no-repeat;
+}
+#featured ul.ui_tabs_nav li.ui-tabs-active a{
+	background:#ccc;
+}
+#featured .ui-tabs-panel{
+	width:580px; height:250px;
+	background:#999; position:relative;
+}
+#featured .ui-tabs-panel .info{
+	position:absolute;
+	top:180px; left:0;
+	height:70px;
+	background: url('images/content_slider/transparent-bg.png');
+}
+#featured .info h2{
+	font-size:18px;line-height:24px;
+	color:#fff; padding:2px 5px; margin:0;
+	overflow:hidden;
+}
+#featured .info h3{
+	font-size:14px;line-height:20px;
+	color:#fff; padding:2px 5px; margin:0;
+	overflow:hidden;
+}
+#featured .info p{
+	margin:0 5px;
+	font-family:Verdana; font-size:12px;
+	line-height:15px; color:#f0f0f0;
+}
+#featured .info a{
+	text-decoration:none;
+	color:#fff;
+}
+#featured .info a:hover{
+	text-decoration:underline;
+}
+#featured .ui-tabs-hide{
+	display:none;
+}
+#featured .info{
+	width:580px;
+}
+
+#templatemo_slider .ui-corner-all, #templatemo_slider .ui-corner-bottom, #templatemo_slider .ui-corner-right, #templatemo_slider .ui-corner-br{
+	border-radius:0px;
+}
+
+#templatemo_slider .ui-widget-content{
+	border:none;
+}
+
+#templatemo_slider .ui-widget{
+	font-size: inherit;
+}
+
+
+#templatemo_slider .ui-tabs .ui-tabs-panel{
+	padding:0;
+}
+
+#templatemo_slider .ui-widget-header {
+  border: none;
+  background: none;
+  color: inherit;
+  font-weight: normal;
+}
+
+#templatemo_slider .ui-tabs .ui-tabs-nav li.ui-tabs-active{
+	margin-bottom:0em;
+}
+
+
+
+#templatemo_slider .ui-tabs-nav li {
+  list-style: none outside none;
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  border-bottom: 0px none;
+  white-space: normal;
+  padding:0px;
+}
+
+#templatemo_slider .ui-tabs-nav li a{
+  margin: 0px;
+  padding:0px;
+	width: 100%;
+}
+
+
+#templatemo_slider .ui-state-default, #templatemo_slider  .ui-widget-content .ui-state-default, #templatemo_slider  .ui-widget-header .ui-state-default {
+  border: none;
+  font-weight: normal;
+}
