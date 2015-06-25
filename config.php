@@ -5,6 +5,9 @@ $theme_change = 0;
 //預設佈景種類 bootstrap , bootstrap3 , html
 $theme_kind = 'html';
 
+//可選用佈景種類 bootstrap , bootstrap3 , html , mix （$theme_change=1 時才有用）
+$theme_kind_arr = 'html';
+
 //引入哪些選單？ all(含 my_menu,admin,user),my_menu,admin,user
 $menu_var_kind = '';
 
