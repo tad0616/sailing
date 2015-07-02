@@ -9,10 +9,10 @@ $theme_kind = 'html';
 $theme_kind_arr = 'html';
 
 //引入哪些選單？ all(含 my_menu,admin,user),my_menu,admin,user
-$menu_var_kind = '';
+$menu_var_kind = 'my_menu';
 
 //額外顏色設定 如： bootstrap3/themes/light/Cerulean
-$theme_color = '';
+$theme_color = 'bootstrap';
 
 /*
 tabs-1 版面基礎設定
