@@ -6,8 +6,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: #333;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 13px;
 	line-height: 1.5em;
 	background-color: #cdeeff;
 	background-image: url(images/templatemo_body.jpg);
@@ -162,8 +160,8 @@ em { color: #000; }
 /* end of menu */
 
 #templatemo_slider {
-	width: 860px;
-	height: 260px;
+	width: 940px;
+	height: 317px;
 	padding: 30px 40px;
 	margin-bottom: 30px;
 	background: url(images/templatemo_sp_box.png) no-repeat;
@@ -318,8 +316,8 @@ em { color: #000; }
 }
 
 #templatemo_footer {
-	width: 940px;
-	padding: 0 10px;
+	width: 100%;
+	padding: 20px ;
 	margin: 0 auto;
 	color: #000;
 	min-height: 160px;
@@ -335,7 +333,7 @@ em { color: #000; }
 }
 
 #footer_top {
-	width: 960px;
+	width: 940px;
 	height: 10px;
 	margin: 0 auto;
 	background: url(images/templatemo_footer_top.png) left no-repeat;
@@ -346,7 +344,6 @@ em { color: #000; }
 #templatemo_footer  #social_box {
 	clear: both;
 	margin: 20px 0;
-	padding: 0;
 	list-style: none;
 }
 

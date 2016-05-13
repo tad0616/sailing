@@ -9,10 +9,10 @@ $theme_kind = 'html';
 $theme_kind_arr = 'html';
 
 //引入哪些選單？ all(含 my_menu,admin,user),my_menu,admin,user
-$menu_var_kind = 'my_menu';
+$menu_var_kind = 'all';
 
 //額外顏色設定 如： bootstrap3/themes/light/Cerulean
-$theme_color = 'bootstrap';
+$theme_color = 'bootstrap3';
 
 /*
 tabs-1 版面基礎設定
@@ -195,13 +195,13 @@ $config_enable['navbar_pos'] = array('enable' => '0', 'min' => '', 'max' => '', 
 $config_enable['navbar_bg_top'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#54b4eb');
 
 //導覽工具列 漸層顏色(bottom)[theme_css_navbar.html]
-$config_enable['navbar_bg_bottom'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#2fa4e7');
+$config_enable['navbar_bg_bottom'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#2fa4e7');
 
 //導覽工具列 連結區塊底色[theme_css_navbar.html]
 $config_enable['navbar_hover'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#1684c2');
 
 //上傳導覽列背景圖[navbar.html]，值：可指定置於「themes/佈景/images/nav_bg/」下的某一檔案名稱
-$config_enable['navbar_img'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+$config_enable['navbar_img'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
 
 //導覽工具列 文字顏色[theme_css_navbar.html]
 $config_enable['navbar_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFFFF');
@@ -210,7 +210,7 @@ $config_enable['navbar_color'] = array('enable' => '1', 'min' => '', 'max' => ''
 $config_enable['navbar_color_hover'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFF00');
 
 //導覽工具列 圖示顏色[navbar.html]，值： icon-white （白色圖案）, '' （黑色圖案）
-$config_enable['navbar_icon'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'icon-white');
+$config_enable['navbar_icon'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'icon-white');
 
 // 上傳導覽列logo圖[navbar.html]，值：可指定置於「themes/佈景/images/navlogo/」下的某一檔案名稱
-$config_enable['navlogo_img'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+$config_enable['navlogo_img'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
