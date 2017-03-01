@@ -17,10 +17,6 @@
 
     <!-- 給模組套用的樣板標籤 -->
     <{$xoops_module_header}>
-    <script src="<{$xoops_url}>/browse.php?Frameworks/jquery/jquery.js" type="text/javascript"></script>
-    <script src="<{$xoops_url}>/modules/tadtools/jquery/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="<{$xoops_url}>/modules/tadtools/jquery/ui/jquery-ui.js" type="text/javascript"></script>
-    <script src="<{$xoops_url}>/modules/tadtools/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
 
     <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.html 那就不需要這一部份 -->
     <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/theme_css.tpl"}>
@@ -70,12 +66,17 @@
             </div>
             <div id="templatemo_content">
               <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/menu/nav-pills/menu.tpl"}>
-              <div class="col-sm-12">
-                <!-- 載入布局 -->
-                  <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/siteclosed_login.tpl"}>
-              </div>
-              <div class="cleaner"></div>
+
+              <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/$theme_type.tpl"}>
+
               <div id="templatemo_footer">
+                <div class="row">
+                  <div class="col-md-12">
+                  <{if $xoops_isadmin}>
+                    <a href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&op=show&confcat_id=3" class="block_config"></a>
+                  <{/if}>
+                  </div>
+                </div>
                 <{$xoops_footer}>
               </div>
 
