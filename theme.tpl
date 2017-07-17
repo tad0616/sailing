@@ -46,7 +46,7 @@
             <{if $logo_img}>
               <a href="<{xoAppUrl}>"><img src="<{$logo_img}>" alt="<{$xoops_sitename}>" style="position: absolute;z-index:10;"></a>
             <{else}>
-              <h1><a href="<{xoAppUrl}>"><{$xoops_sitename}><span><{$xoops_slogan}></span></a></h1>
+              <a href="<{xoAppUrl}>"><{$xoops_sitename}><span><{$xoops_slogan}></span></a>
             <{/if}>
           </div>
 
